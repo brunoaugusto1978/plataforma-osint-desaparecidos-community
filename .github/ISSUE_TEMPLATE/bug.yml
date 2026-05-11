@@ -1,0 +1,57 @@
+﻿name: Bug
+description: Reportar erro funcional, visual ou de comportamento na Community Edition.
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar um problema. Não inclua dados reais, nomes reais, fotos reais ou evidências reais.
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição do problema
+      description: Explique claramente o que aconteceu.
+      placeholder: Exemplo: Ao clicar em "Ver detalhes", a tela não carrega corretamente.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir
+      description: Liste os passos necessários para reproduzir o problema.
+      placeholder: |
+        1. Acessar Dashboard
+        2. Clicar em Ver Detalhes
+        3. Observar o erro
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+      description: O que deveria acontecer?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidências visuais
+      description: Prints são permitidos, desde que não contenham dados reais.
+    validations:
+      required: false
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área afetada
+      options:
+        - Dashboard
+        - Casos
+        - Detalhe do caso
+        - Análises OSINT
+        - Moderação de relatos
+        - Inteligência de dados
+        - Documentação
+        - Outro
+    validations:
+      required: true

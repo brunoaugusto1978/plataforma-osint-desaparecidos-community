@@ -1,0 +1,40 @@
+﻿name: UI/UX
+description: Sugerir melhoria de interface, usabilidade ou acessibilidade.
+title: "[UI/UX] "
+labels: ["ui/ux"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto da melhoria
+      description: Onde a melhoria se aplica?
+      placeholder: Exemplo: Dashboard, sidebar, detalhe do caso, card de evidência.
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Como está hoje?
+      description: Descreva a experiência atual.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Como deveria ficar?
+      description: Descreva a experiência desejada.
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Tipo de melhoria
+      options:
+        - Usabilidade
+        - Acessibilidade
+        - Layout
+        - Responsividade
+        - Texto/microcopy
+        - Organização visual
+    validations:
+      required: true

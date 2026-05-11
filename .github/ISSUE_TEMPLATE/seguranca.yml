@@ -1,0 +1,37 @@
+﻿name: Segurança e Governança
+description: Sugerir melhoria de segurança, privacidade, ética ou governança.
+title: "[SEGURANÇA] "
+labels: ["segurança"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Atenção: não publique dados reais, fotos reais, nomes reais, evidências reais, chaves, tokens, URLs sensíveis ou detalhes exploráveis. Para vulnerabilidades sensíveis, siga o SECURITY.md.
+  - type: dropdown
+    id: category
+    attributes:
+      label: Categoria
+      options:
+        - Privacidade
+        - Segurança de aplicação
+        - Governança de dados
+        - Ética em OSINT
+        - Redução de falso positivo
+        - Auditoria e rastreabilidade
+        - Outro
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: Descrição da preocupação ou melhoria
+      description: Explique o ponto sem expor informações sensíveis.
+    validations:
+      required: true
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Recomendação
+      description: Sugira uma forma segura de tratar o ponto.
+    validations:
+      required: false
