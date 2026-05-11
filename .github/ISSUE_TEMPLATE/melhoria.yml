@@ -1,0 +1,49 @@
+﻿name: Melhoria
+description: Sugerir melhoria funcional, visual ou de fluxo.
+title: "[MELHORIA] "
+labels: ["melhoria"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use este formulário para sugerir melhorias na Community Edition. Não inclua dados reais ou lógica operacional sensível.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema ou oportunidade
+      description: Qual problema essa melhoria resolve?
+      placeholder: Exemplo: O card de evidências poderia deixar mais clara a decisão humana pendente.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta de melhoria
+      description: Descreva a solução sugerida.
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impacto esperado
+      options:
+        - Baixo
+        - Médio
+        - Alto
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      options:
+        - UI/UX
+        - Acessibilidade
+        - Documentação
+        - Componentes React
+        - Mocks
+        - Fluxo de triagem
+        - Inteligência de dados
+        - Governança
+    validations:
+      required: true

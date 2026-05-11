@@ -1,0 +1,26 @@
+﻿name: Documentação
+description: Sugerir correção, complemento ou melhoria na documentação.
+title: "[DOCS] "
+labels: ["documentação"]
+body:
+  - type: textarea
+    id: section
+    attributes:
+      label: Documento ou seção afetada
+      placeholder: Exemplo: README.md, docs/usability.md, SECURITY.md
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: O que precisa ser ajustado?
+      description: Explique o problema, ausência ou oportunidade de melhoria.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Sugestão de texto ou estrutura
+      description: Se possível, proponha a alteração.
+    validations:
+      required: false
